@@ -1,0 +1,34 @@
+
+FORMS AND INPUTS
+
+jumbotron
+container- For bootstrap grid
+btn btn-success,danger,info,lg,sm,xs
+form-group
+form-control
+checkbox
+form-inline
+
+NAVBAR
+
+navbar
+navbar-toggle collapsed
+nav
+collapse
+sr-only
+icon-bar
+navbar-nav,right,form,left,collapse,brand,toggle,header,default,inverse
+dropdown
+active
+dropdown-toggle,menu
+divider
+caret
+
+GRID SYSYTEM
+
+col-lg,sm,xs,md-6,2,1,12,4,3
+pink
+
+IMAGE 
+
+thumbnail(for thumb nailing)
