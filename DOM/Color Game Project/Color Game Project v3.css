@@ -1,0 +1,79 @@
+.square{
+	width: 30%;
+	margin:1.66%;
+	background-color:#232323;
+	padding-bottom: 30%;
+	float:left;/*elements go side by side*/
+	border-radius: 15%;/*rounds the corners of an element's outer border edge*/
+	transition: background 0.6s;/*takes place only when background property is changed*/
+	--webkit-transition: background 0.6s ;
+	--moz-transition: background 0.6s ;
+}
+body{
+	background-color: #232323;/*background actually is a shorthand for
+
+								background-color
+								background-image
+								background-position
+								background-repeat
+								background-attachment
+								background-clip
+								background-origin
+								background-size*/
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+h1 span{
+	font-size: 200%;
+}
+#container{
+	margin: 20px auto;
+	max-width: 600px;
+}
+h1{
+	color:white;
+	text-align:center;
+	background-color: steelblue; 
+	margin: 0;
+	font-weight: normal;
+	line-height:1.1;
+	padding:20px 0;
+	text-transform: uppercase;
+}
+#stripe{
+	background-color: white;
+	height: 30px;
+	text-align:center;
+	color:black;
+}
+/*#message{
+	color:black;
+}*/
+.selected{
+	background-color: steelblue;
+	color:white;
+}
+button{
+	border:none;/*removes any border*/
+	background:none;/*removes any background*/
+	text-transform: uppercase;
+	height: 100%;
+	font-weight:700;
+	color:steelblue;
+	letter-spacing: 1px;
+	font-size: inherit; /*inherit --> causes the element to take the value of the property from its parent element*/
+	font-family: inherit;
+	transition: all 0.6s;
+	--webkit-transition: all 0.6s ;/*for safari and chrome*/
+	--moz-transition: all 0.6s ;/*for mozilla firefox*/
+	outline:none;/*by default set by browser as visible*/
+}
+#message{
+	display:inline-block;/*for creating a default inline block-level space for the element*/
+	width:20%;
+}
+button:hover{
+	color: white;
+	background: steelblue;
+}
