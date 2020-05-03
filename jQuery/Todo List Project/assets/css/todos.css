@@ -1,0 +1,116 @@
+/*ARRANGE BY SPECIFICITY*/
+
+#container{
+/*	border: 2px solid grey;*/
+	width: 360px;
+	margin: 100px auto;
+	background-color: white;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1)/*(To add shadow effect around container)*/
+}
+
+.done{
+	text-decoration: line-through;
+	color: grey;
+}
+
+h1{
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;/*400*/
+}
+ul{
+	list-style: none;/*removes all bullets*/
+	margin:0;
+	padding: 0;
+}
+li{
+	/*padding:;*/
+	height: 40px;
+	line-height: 40px;/*sets the height of line box*/
+	color:#666;
+}/*
+<div class="example">
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+	<div>This is a <em>divider</em>.</div> <!-- Element to select -->
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+</div>
+If we wanted to select the fifth element, the div, we could simply write the following -
+
+.example :nth-child(5) { background: #ffdb3a; }
+
+Whereas nth-of-type selects the element of the specified type irrespective of its group(class,etc.) 
+
+If we wanted to select the fifth element, the div, we could simply write the following -
+
+div: nth-of-type(1){};
+*/
+li:nth-of-type(even){/*li:nth-child(2n) can also be used*/
+	background-color: #f7f7f7;
+}
+input{
+	width:100%;
+/*	outline:none;
+	border-color: #f7f7f7;*/
+	padding: 13px 13px 13px 20px;
+	background-color: #f7f7f7;
+	font-size: 18px;
+	box-sizing: border-box;/*sets how the total width and height of an element is calculated
+
+	content-box gives you the default CSS box-sizing behavior. If you set an element's width to 100 pixels, 
+	then the element's content box will be 100 pixels wide, 
+	and the width of any border or padding will be added to the final rendered width, making the element wider than 100px.
+
+	border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.
+	If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, 
+	and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+	color: #2980b9;
+	border: 3px solid rgba(0,0,0,0);
+}
+input:focus{
+	background-color: #fff;
+	/*background: #fff;*/
+	outline: none;
+
+	border: 3px solid #2980b9;
+}
+.fa-plus{
+	float:right;
+}
+body{
+	/*for the background gradient color*/
+	background: #2BC0E4;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: 'Roboto', sans-serif;
+}
+
+span{
+	width: 0px;
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color:white;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;/*0 to 1*/
+
+}
+li:hover span{
+	width: 40px;
+	opacity: 1;
+}
+.plus{
+	display: none;
+}
